@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ochieng</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      nav {
+        width: 100%;
+        background-color: #333;
+        padding: 1rem 0;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .image img {
+        width: 200px; /* 👈 Make image smaller */
+        height: auto;
+        margin-bottom: 1.5rem;
+        border-radius: 8px; /* Optional: rounded corners */
+      }
+
+      .content .title {
+        font-size: 1.5rem;
+        color: #555;
+      }
+
+      .content h1 {
+        font-size: 2.5rem;
+        margin: 0.5rem 0;
+      }
+
+      .content h1 span {
+        color: #007acc;
+      }
+
+      .content p {
+        font-size: 1.1rem;
+        margin: 0.5rem 0 1.5rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: #007acc;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #005f99;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <nav>
+        <ul>
+          <li><a href="inde.html">Home</a></li>
+          <li><a href="../alterna/ab.html">About</a></li>
+          <li><a href="proj.html">Projects</a></li>
+          <li><a href="../alterna/cont.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <div class="image">
+          <img src="../lib.jpg" alt="oo" />
+        </div>
+
+        <div class="content">
+          <span class="title">Web developer</span>
+          <h1>Hello, I'M <span>Richard Ochieng</span></h1>
+          <p>I'm building responsive and multi-functional websites</p>
+          <a
+            href="../My-portfolio-main/w3portfolio/img/CURRICULUM_VITAE.docx"
+            class="btn"
+            >Download my Resume</a
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

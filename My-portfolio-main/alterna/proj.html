@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    nav {
+      background-color: #1e1e1e;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      background-color: #ffffff;
+      min-height: 100vh;
+    }
+
+    .projects {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .projects h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    .project {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .project p {
+      margin: 10px 0 15px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .project a {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .project a:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .projects h1 {
+        font-size: 1.8rem;
+      }
+
+      .project {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <nav>
+      <ul>
+        <li><a href="inde.html">Home</a></li>
+        <li><a href="../alterna/ab.html">About</a></li>
+        <li><a href="proj.html">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="projects">
+      <h1>My Projects</h1>
+
+      <div class="project">
+        <h3>Project 1: Attachment Website</h3>
+        <p>
+          A responsive platform to manage and track student industrial attachments,
+          built using HTML, CSS, PHP, Hack, and JavaScript.
+        </p>
+        <a href="https://github.com/IT-Tutors-Coding-Space/Attachment.git" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Project 2: HopeBot</h3>
+        <p>
+          A chatbot to assist in engaging people, improving communication and interaction flow.
+        </p>
+        <a href="https://github.com/Richie-a11y/HOPEBOT.git" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Project 3: Multiply360</h3>
+        <p>
+          A purpose-built application designed to empower disciples, student leaders, and ministry workers for Life Ministry Kenya.
+        </p>
+        <a href="https://github.com/Richie-a11y/multiply360.git" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
