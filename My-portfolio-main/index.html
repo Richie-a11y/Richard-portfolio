@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Richard Ochieng - Portfolio</title>
-  <script src="main.js" defer></script>
   <style>
-    /* Reset */
+    /* General Reset */
     * {
       margin: 0;
       padding: 0;
@@ -15,133 +14,130 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f9fc;
-      color: #333;
       line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
-    header {
-      background-color: #007acc;
-      padding: 1rem 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Navigation */
+    .navbar {
+      background-color: #333;
+      padding: 1rem;
     }
 
-    nav ul {
-      list-style: none;
+    .nav-links {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      list-style: none;
     }
 
-    nav ul li a {
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
       color: #fff;
       text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: bold;
+      font-weight: 500;
+      transition: color 0.3s;
     }
 
-    nav ul li a:hover {
-      text-decoration: underline;
+    .nav-links a:hover {
+      color: #00bcd4;
     }
 
+    /* Hero Section */
     .hero {
       text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(to right, #007acc, #005f99);
-      color: #fff;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: white;
     }
 
     .hero h1 {
       font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
+      margin-bottom: 20px;
+      font-weight: bold;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      color: #e0e0ff;
-      margin-bottom: 2rem;
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      color: #e0dcdc;
     }
 
-    .skills {
+    .cta-buttons {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 15px;
       flex-wrap: wrap;
     }
 
     .cta-button {
-      background-color: #ffffff;
-      color: #007acc;
-      border: 2px solid #ffffff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
+      background-color: #00bcd4;
+      color: white;
+      padding: 12px 25px;
       text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-      transition: all 0.3s ease-in-out;
+      transition: background-color 0.3s;
     }
 
     .cta-button:hover {
-      background-color: #005f99;
-      color: #ffffff;
-      border-color: #ffffff;
+      background-color: #0097a7;
     }
 
-    .featured-projects {
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
+    /* Footer */
     footer {
-      background-color: #f0f0f0;
-      padding: 2rem 1rem;
+      background-color: #222;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
     }
 
     footer h2 {
-      margin-bottom: 1rem;
-      color: #007acc;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
     }
 
     .social-links {
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
+      gap: 20px;
     }
 
-    .social-links li a {
+    .social-links a {
+      color: #fff;
       text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
     }
 
-    .social-links li a:hover {
-      text-decoration: underline;
+    .social-links a:hover {
+      color: #00bcd4;
     }
 
+    /* Responsive Text */
     @media (max-width: 600px) {
       .hero h1 {
         font-size: 1.8rem;
       }
 
-      .cta-button {
-        width: 100%;
-        text-align: center;
+      .hero p {
+        font-size: 1rem;
       }
 
-      nav ul {
-        flex-direction: column;
-        gap: 1rem;
+      .cta-button {
+        padding: 10px 20px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -150,18 +146,20 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to Richard Ochieng's Portfolio</h1>
-    <p>Discover my skills, projects, and professional journey.</p>
-    <div class="skills">
-      <a href="CURRICULUM_VITAE.docx" class="cta-button">Download My CV</a>
-      <a href="projects.html" class="cta-button">View Projects</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Welcome to Richard Ochieng's Personal Portfolio</h1>
+      <p>Discover my skills and projects</p>
+      <div class="cta-buttons">
+        <a href="w3portfolio/img/CURRICULUM_VITAE.docx" class="cta-button">Download My CV</a>
+        <a href="projects.html" class="cta-button">View Projects</a>
+      </div>
+    </section>
 
-  <section class="featured-projects">
-    <!-- You can add featured projects here later -->
-  </section>
+    <section class="featured-projects">
+      <!-- Projects can be added here -->
+    </section>
+  </main>
 
   <footer>
     <h2>Find More About Me</h2>
@@ -172,3 +170,4 @@
   </footer>
 </body>
 </html>
+
