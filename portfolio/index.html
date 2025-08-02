@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Ochieng - Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: #333;
+      padding: 1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      color: #e0dcdc;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .cta-button {
+      background-color: #00bcd4;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #0097a7;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .social-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #00bcd4;
+    }
+
+    /* Responsive Text */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Richard Ochieng's Personal Portfolio</h1>
+      <p>Discover my skills and projects</p>
+      <div class="cta-buttons">
+        <a href="w3portfolio/img/CURRICULUM_VITAE.docx" class="cta-button">Download My CV</a>
+        <a href="projects.html" class="cta-button">View Projects</a>
+      </div>
+    </section>
+
+    <section class="featured-projects">
+      <!-- Projects can be added here -->
+    </section>
+  </main>
+
+  <footer>
+    <h2>Find More About Me</h2>
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/in/richard-ochieng-206b4b339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+      <li><a href="https://github.com/Richie-a11y">GitHub</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
+
